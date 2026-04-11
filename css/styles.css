@@ -1,0 +1,133 @@
+/* 
+   Minerva University — Official Brand Identity 
+   Source: Brand Resources & Standards Guide (Updated Fall 2025)
+*/
+
+:root {
+    /* Primary Color Palette */
+    --mu-obsidian: #000000;
+    --mu-white: #ffffff;
+    --mu-bone: #f0ebe6;
+    --mu-ivory: #f2f2f2;
+    
+    /* Highlight Colors (Accents) */
+    --mu-goldenrod: #f0b91e;
+    --mu-tangerine: #f0871e;
+    --mu-clay: #905112;
+
+    /* Neutrals */
+    --mu-charcoal: #3c3732;
+    --mu-slate: #5a5550;
+    --mu-graphite: #78736e;
+    --mu-ash: #d2cdc8;
+
+    /* Functional UI Colors */
+    --bg-main: var(--mu-bone);
+    --text-main: var(--mu-obsidian);
+    --text-muted: var(--mu-slate);
+    --accent: var(--mu-clay);
+
+    /* Typography Fallbacks */
+    --font-serif: "Chronicle Display", "Garamond", "Times New Roman", serif;
+    --font-sans: "Neue Haas Grotesk", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    
+    /* Spacing & UI Patterns */
+    --spacing-unit: 1rem;
+    --border-radius: 8px; /* Standard rounded corners per guidelines */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    color: var(--text-main);
+    background-color: var(--bg-main);
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-unit);
+}
+
+/* Typography Hierarchy per Standards */
+h1 {
+    font-family: var(--font-serif);
+    font-weight: 300; /* Light */
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: var(--font-sans);
+    font-weight: 600; /* Medium/Bold */
+    font-size: 1.5rem;
+    color: var(--mu-clay);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    font-size: 1.125rem; /* 18pt equivalent for digital */
+    margin-bottom: 1.25rem;
+}
+
+/* UI Elements */
+.card {
+    background: var(--mu-white);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+header {
+    background-color: var(--mu-obsidian);
+    color: var(--mu-white);
+    padding: 4rem 0;
+    text-align: left; /* Standards prefer left or centered */
+}
+
+.subtitle {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.25rem;
+    opacity: 0.8;
+}
+
+footer {
+    background: var(--mu-ash);
+    padding: 3rem 0;
+    margin-top: 4rem;
+}
+
+.ai-disclosure {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+}
+
+.badge {
+    background: var(--mu-goldenrod);
+    color: var(--mu-obsidian);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
