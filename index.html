@@ -3,22 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your App Name] — Minerva University</title>
+    <title>AP Review Workbench — Minerva University Admissions</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>[Your App Name]</h1>
-            <p class="subtitle">[One-sentence purpose]</p>
+            <h1>AP Review Workbench</h1>
+            <p class="subtitle">AI-assisted analysis for writing samples and accomplishment verification.</p>
         </div>
     </header>
 
     <main class="container">
-        <!-- Students will build their app here -->
-        <section id="app-placeholder">
-            <h2>Ready to start?</h2>
-            <p>Tell Gemini what your first milestone is, or ask: "What should we build first for [App Name]?"</p>
+        <!-- Tab Navigation -->
+        <nav class="tabs-nav">
+            <button class="tab-btn active" data-tab="writing">Writing Review</button>
+            <button class="tab-btn" data-tab="competitions">Competition Checker</button>
+        </nav>
+
+        <!-- Tab Content: Writing Review -->
+        <section id="writing-tab" class="tab-content active">
+            <div class="card">
+                <h2>Writing Review</h2>
+                <p>Paste an applicant's writing sample below for sentence-by-sentence analysis.</p>
+                <textarea id="writing-input" placeholder="Paste writing sample here..." rows="10" style="width: 100%; padding: 1rem; border-radius: 8px; border: 1px solid var(--mu-ash); font-family: var(--font-serif); font-size: 1.125rem; margin-bottom: 1rem;"></textarea>
+                <button id="analyze-writing-btn" class="btn-primary">Analyze Sample</button>
+            </div>
+            
+            <div id="writing-results" class="results-container" style="display: none; margin-top: 2rem;">
+                <!-- AI results will be rendered here -->
+            </div>
+        </section>
+
+        <!-- Tab Content: Competition Checker -->
+        <section id="competitions-tab" class="tab-content">
+            <div class="card">
+                <h2>Competition Checker</h2>
+                <p>Enter a competition or award name to get context on its scope and selectiveness.</p>
+                <input type="text" id="competition-input" placeholder="e.g., International Biology Olympiad" style="width: 100%; padding: 1rem; border-radius: 8px; border: 1px solid var(--mu-ash); font-size: 1.125rem; margin-bottom: 1rem;">
+                <button id="check-competition-btn" class="btn-primary">Check Competition</button>
+            </div>
+            
+            <div id="competition-results" class="results-container" style="display: none; margin-top: 2rem;">
+                <!-- AI results will be rendered here -->
+            </div>
         </section>
     </main>
 

@@ -1,14 +1,14 @@
-# [PROJECT NAME] — Project Context
+# AP Review Workbench — Project Context
 
 ## Project Identity
 
-**Name**: [Your App Name]
-**Purpose**: [One sentence — what does this app do, and why does it matter to the people who use it?]
-**Audience**: [Who uses this? What do they already know, and what are they trying to do?]
-**Human context**: [What changes in how people think, learn, or act because this app exists?]
+**Name**: AP Review Workbench
+**Purpose**: A tool for Minerva University Admissions Processors to review writing samples and verify accomplishments faster and more consistently.
+**Audience**: Minerva Admissions team.
+**Human context**: This tool helps APs review writing samples and accomplishments faster and more consistently. Instead of manually checking grammar and Googling competitions, APs get AI-assisted analysis they can quickly review and accept/reject. The AP always makes the final call - the AI just surfaces things they might miss or speeds up what they already do.
 
-**GitHub repo**: [username/repo-name]
-**Live URL**: [https://username.github.io/repo-name]
+**GitHub repo**: naizabayeva/ap-review-workbench
+**Live URL**: https://naizabayeva.github.io/ap-review-workbench/
 
 ## Tech Stack
 

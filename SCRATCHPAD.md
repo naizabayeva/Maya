@@ -2,42 +2,37 @@
 
 ## Current State
 
-> **Keep this block short and current.** Update it at the end of every session.
-> This is the first thing Gemini reads — make it worth reading.
-
-**Status**: NOT STARTED
-**Active milestone**: M1 — [Milestone name]
-**Last session**: [YYYY-MM-DD]
+**Status**: M1 & M2 FEATURE COMPLETE (LOCAL)
+**Active milestone**: M3 — Combined Workbench & Polish
+**Last session**: 2026-04-10
 
 **Next actions**:
-- [ ] [The first concrete thing to do next session]
-- [ ] [The second thing]
-- [ ] [The third thing, if known]
+- [ ] Add more entries to `js/data.js` competition database
+- [ ] Implement "Export/Copy Summary" feature for APs
+- [ ] Final UI polish and WCAG AA accessibility check
+- [ ] Add session logging (localStorage) for the current session's work
 
 **Open questions**:
-- [Any unresolved technical or design decisions]
-- [Any user-facing questions that need answering before proceeding]
+- [ ] Should we allow APs to add new competitions to their local database during a session?
+- [ ] How many sentences is too many for a single analysis (performance limit)?
 
 ---
 
 ## Milestones
 
-> Each milestone should represent a user-visible capability, not a technical task.
-> Write the acceptance criteria as things a real user could verify, not things only a developer would notice.
-
 ### M0 — Project Initialization
 
-- [ ] Clone template repository
-- [ ] Fill in GEMINI.md project identity section
+- [x] Clone template repository
+- [x] Fill in GEMINI.md project identity section
 - [ ] **Define AI Guardrails**: In `DECISIONS.md`, document how this project handles data privacy and human accountability.
-- [ ] Define milestones M1–M3 below
+- [x] Define milestones M1–M3 below
 - [ ] Push initial commit to GitHub
 - [ ] Enable GitHub Pages in repository settings
 - [ ] Confirm live URL is accessible
 
-### M1 — [First Milestone Name]
+### M1 — Writing Review
 
-*[One sentence: what can a user do or experience once this milestone is complete?]*
+*Sentence-by-sentence grammar analysis and vocabulary assessment for writing samples.*
 
 **Values checklist**:
 - [ ] **Learning**: Deepens understanding & invites participation
@@ -46,26 +41,13 @@
 - [ ] **Transparency**: AI use disclosed & human-reviewed
 
 **Acceptance criteria**:
-- [ ] [Criterion 1 — observable by a user]
-- [ ] [Criterion 2]
-- [ ] [Criterion 3]
+- [ ] User can paste a writing sample into a text area
+- [ ] AI provides sentence-by-sentence grammar and vocabulary feedback
+- [ ] User can manually review and edit AI-suggested changes
 
-### M2 — [Second Milestone Name]
+### M2 — Accomplishments Checker
 
-*[Description]*
-
-**Values checklist**:
-- [ ] Learning
-- [ ] Agency
-- [ ] Privacy
-- [ ] Transparency
-
-**Acceptance criteria**:
-- [ ] [Criterion]
-
-### M3 — [Third Milestone Name]
-
-*[Description]*
+*Competition lookup and context for applicant awards and activities.*
 
 **Values checklist**:
 - [ ] Learning
@@ -74,7 +56,24 @@
 - [ ] Transparency
 
 **Acceptance criteria**:
-- [ ] [Criterion]
+- [ ] User can input a competition or award name
+- [ ] AI provides context on competition scope (local/national/int) and selectiveness
+- [ ] Results are clearly displayed for AP review
+
+### M3 — Combined Workbench
+
+*Unified UI with session logging and final polish.*
+
+**Values checklist**:
+- [ ] Learning
+- [ ] Agency
+- [ ] Privacy
+- [ ] Transparency
+
+**Acceptance criteria**:
+- [ ] Both tabs (Writing Review & Accomplishments) are integrated into a single interface
+- [ ] AP can export or copy a summary of their review
+- [ ] UI is polished and accessible (WCAG AA)
 
 <!-- Add milestones as the project grows. Keep acceptance criteria user-observable. -->
 
